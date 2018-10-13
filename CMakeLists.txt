@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 3.0.2)
 project(libfm-qt)
 
 set(LIBFM_QT_LIBRARY_NAME "fm-qt" CACHE STRING "fm-qt")
@@ -25,10 +24,6 @@ set(REQUIRED_QT_VERSION "5.7.1")
 set(REQUIRED_GLIB_VERSION "2.50.0")
 set(REQUIRED_LIBMENUCACHE_VERSION "0.4.0")
 set(REQUIRED_LXQT_BUILD_TOOLS_VERSION "0.5.0")
-
-if (NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release)
-endif()
 
 find_package(Qt5Widgets "${REQUIRED_QT_VERSION}" REQUIRED)
 find_package(Qt5LinguistTools "${REQUIRED_QT_VERSION}" REQUIRED)
